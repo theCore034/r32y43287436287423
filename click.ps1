@@ -60,7 +60,7 @@ Add-Type -TypeDefinition $cSource -ReferencedAssemblies System.Windows.Forms,Sys
 
 # Send a click at a specified point 5 times with 1-second interval
 for ($i = 1; $i -le 3; $i++) {
-   [Clicker]::LeftClickAtPoint(880, 110)
-    #[Clicker]::LeftClickAtPoint(800, 490)
+   #[Clicker]::LeftClickAtPoint(880, 110)
+    [Clicker]::LeftClickAtPoint(800, 490)
     Start-Sleep -Milliseconds 100
 }
